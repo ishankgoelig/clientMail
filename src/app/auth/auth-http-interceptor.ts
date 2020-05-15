@@ -11,6 +11,7 @@ import { Observable } from 'rxjs';
 
 export class AuthHttpInterceptor implements HttpInterceptor {
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+        // Modify or log the outgoing request
         const modifiedReq = req.clone({
             withCredentials: true
         });
