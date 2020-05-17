@@ -10,6 +10,6 @@ import { ModalComponent } from './modal/modal.component';
     CommonModule,
     ReactiveFormsModule
   ],
-  exports: [InputComponent]
+  exports: [InputComponent, ModalComponent]
 })
 export class SharedModule { }
